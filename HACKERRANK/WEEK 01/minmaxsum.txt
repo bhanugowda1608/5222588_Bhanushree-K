@@ -14,3 +14,4 @@ void miniMaxSum(int arr_count, int* arr) {
     printf("%lld %lld\n",arrsum-max,arrsum-min);
    
 }
+
