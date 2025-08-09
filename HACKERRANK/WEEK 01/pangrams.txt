@@ -1,0 +1,22 @@
+char* pangrams(char* s) {
+     bool found[26]={false};
+     int count=0;
+     for(int i=0;s[i]!='\0';i++)
+     {
+        if(isalpha(s[i])){
+            char lower=tolower(s[i]);
+            int index=lower-'a';
+            if(!found[index]){
+                found[index]=true;
+                count++;
+            }
+        }
+     }
+     if(count==26){
+     return "pangram";
+     }
+     else{
+      return "not pangram";
+     }
+
+}
